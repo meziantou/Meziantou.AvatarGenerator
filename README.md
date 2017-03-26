@@ -1,5 +1,8 @@
 Generate an avatar using the initials of your name.
 
+![sample square](img/sample-square.png)
+![sample circle](img/sample-circle.png)
+
 1. /avatar?n=Gérald%20Barré&s=128&f=circle&o=png
 1. /avatar/Gérald%20Barré.png?s=128&f=circle
 
