@@ -184,7 +184,7 @@ namespace Meziantou.AvatarGenerator.Controllers
                         case BackgroundFormat.Circle:
                             using (var backgroundBrush = new SolidBrush(options.BackgroundColor))
                             {
-                                drawing.FillEllipse(backgroundBrush, 0, 0, options.Size, options.Size);
+                                drawing.FillEllipse(backgroundBrush, -1, -1, options.Size + 1, options.Size + 1);
                             }
                             break;
 
@@ -192,7 +192,7 @@ namespace Meziantou.AvatarGenerator.Controllers
                         default:
                             using (var backgroundBrush = new SolidBrush(options.BackgroundColor))
                             {
-                                drawing.FillRectangle(backgroundBrush, 0, 0, options.Size, options.Size);
+                                drawing.FillRectangle(backgroundBrush, -1, -1, options.Size + 1, options.Size + 1);
                             }
                             break;
                     }
